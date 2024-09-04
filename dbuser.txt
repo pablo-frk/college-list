@@ -1,0 +1,6 @@
+user: frkp
+pass: UUy6G!6S2tyLEc6
+
+
+STRING DE CONEXAO
+mongodb+srv://frkp:UUy6G!6S2tyLEc6@college-list.7ensf.mongodb.net/?retryWrites=true&w=majority&appName=college-list

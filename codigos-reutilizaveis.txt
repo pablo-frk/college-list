@@ -1,0 +1,88 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus List</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="font-sans">
+    <main
+      class="flex min-h-screen flex-col items-center justify-center p-6 bg-gray-100"
+    >
+      <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+        <h1 class="text-2xl font-bold mb-6 text-black">📜 Formulário</h1>
+        <form class="flex flex-col space-y-4 text-black">
+          <label class="flex flex-col">
+            <span class="text-1xl font-bold">👨‍🎓 Nome:</span>
+            
+            <input
+              id="student-name"
+              type="text"
+              required=""
+              class="mt-1 p-2 border border-gray-300 rounded"
+              value=""
+              wfd-id="id0" />
+
+            </label>
+            
+            <label class="flex flex-col"
+            ><span class="text-1xl font-bold">🏫 Faculdade:</span
+            ><select
+              required=""
+              class="mt-1 p-2 border border-gray-300 rounded"
+            >
+              <option value="" selected="">Selecione</option>
+              <option value="FSSS">FSSS</option>
+              <option value="FATEC">FATEC</option>
+              <option value="UNEB">UNEB</option>
+              <option value="CETASS">CETASS</option>
+              <option value="SENAI">SENAI</option>
+              <option value="PITÁGORAS">PITÁGORAS</option>
+              <option value="SANTO ANTÔNIO">SANTO ANTÔNIO</option>
+              <option value="ESANY">ESANY</option>
+              <option value="UNOPAR">UNOPAR</option>
+              <option value="UNIGRANDE">UNIGRANDE</option>
+              <option value="UNIASSELVI">UNIASSELVI</option>
+              <option value="LIDER CURSOS">LIDER CURSOS</option>
+              <option value="HAIR SCHOOL">HAIR SCHOOL</option>
+            </select></label
+          ><button
+            class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+            onclick="addPeople()"
+            type="button"
+          >
+            Adicionar
+          </button>
+        </form>
+      </div>
+      <div
+        class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg mt-8 text-black"
+      >
+
+      <div>
+        <h2>Remover Aluno</h2>
+        <input type="text" id="remove-student-name" placeholder="Nome do Aluno para Remover" />
+        <input type="text" id="remove-student-identifier" placeholder="Seu Identificador Único" />
+        <button onclick="removeStudent()">Remover</button>
+    </div>
+
+
+        <h1 class="text-2xl font-bold mb-2">📋 Lista</h1>
+        <div>
+            <ol class="list-decimal" id="listPeople">
+                <!-- <li>Olá</li> -->
+            </ol>
+        </div>
+      </div>
+
+      
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
